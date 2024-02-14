@@ -18,10 +18,12 @@
     background-color: #506c64 !important;
     color: #eee0cb !important;
   }
+
   main{
-    height: 73vh;
+    height: 75vh;
     background-image: url(./../img/magasin4.jpg);
     
+
   }
   header {
     background-color: #506c64;
@@ -40,20 +42,22 @@
     display: none;
     color: #eee0cb !important;
   }
-  h2 {
-    color: #882a1b !important;
-  }
   h3{
     font-family: 'Quicksand', sans-serif;
     color: #eee0cb !important;
   }
+ input{
+    background-color: #eee0cb;
+    height: 40px;
+    border-radius: 5px;
+ }
+
+  #form, #logo{
+    box-sizing: border-box;
+    width: 55%;
+  }
   footer {
     height: 100px;
-  }
-  aside input{
-    width: 100%;
-    height: 45px;
-    background-color: #eee0cb;
   }
   @media screen and (min-width: 700px) {
     h1 {
@@ -66,20 +70,30 @@
     h3 {
       margin-left: 3%;
     }
+  
   }
-  @media screen and (max-width: 650px){
-    #centraldiv {
-        width: 200px !important;
-    
+  @media screen and (max-width : 500px) {
+    .smview{
+        display: flex !important;
+        flex-direction: column !important;
     }
-    .empty{
-      display: none;
+    label{
+        margin: 2px;
     }
-    #bgForm {
-      width: 300px !important;
-      height: 580px;
+    input{
+        margin: 2px;
+        
+    }
+    #form, #logo{
+        width: 130% !important;
+    }
+    h4{
+        display: none;
     }
     main{
-      height: 90vh;
+        height: 140vh;
+    }
+    .input{
+        padding: 0px !important;
     }
   }
